@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" >
+	<fx:Declarations>
+		<!-- Разместить невизуальные элементы (например, службы или объекты значений) -->
+	</fx:Declarations>
+	
+	
+	
+	<mx:ComboBox x="0" y="0" width="130" height="27" dataProvider="{styledata}"
+				 dropdownWidth="250" fontSize="11" fontWeight="bold" rowCount="10" 
+				 selectionColor="#FFFFFF" textSelectedColor="#0012FF" rollOverColor="#E7CF00"  />
+	
+	<mx:ViewStack id="styledata" x="644" y="109" width="126" visible="false">
+		
+		<mx:VBox label="Общий"
+				 icon="@Embed('ui/pict_styledata/all.png')"
+				 
+				 backgroundColor="white"
+				 width="480"
+				 height="32">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Числовой"
+				 icon="@Embed('ui/pict_styledata/number.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Денежный"
+				 icon="@Embed('ui/pict_styledata/money.png')"
+				 backgroundColor="white"
+				 width="101"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Финансовый"
+				 icon="@Embed('ui/pict_styledata/finance.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Краткая дата"
+				 icon="@Embed('ui/pict_styledata/short_date.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Длинный формат даты"
+				 icon="@Embed('ui/pict_styledata/long_date.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Время"
+				 icon="@Embed('ui/pict_styledata/time.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Процентный"
+				 icon="@Embed('ui/pict_styledata/percent.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Дробный"
+				 icon="@Embed('ui/pict_styledata/double.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Экспоненциальный"
+				 icon="@Embed('ui/pict_styledata/exponential.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Текстовый"
+				 icon="@Embed('ui/pict_styledata/text.png')"
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+		<mx:VBox label="Другие числовые форматы.."
+				 
+				 backgroundColor="white"
+				 width="480"
+				 height="60">
+			
+		</mx:VBox>
+		
+	</mx:ViewStack>
+	
+
+	
+	
+	
+	
+	
+</s:Group>

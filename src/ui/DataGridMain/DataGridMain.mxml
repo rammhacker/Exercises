@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	<fx:Declarations>
+		<!-- Разместить невизуальные элементы (например, службы или объекты значений) -->
+	</fx:Declarations>
+	
+	
+	<s:DataGrid x="0" y="0" width="342" height="260" 
+				requestedRowCount="10"   >
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="A" headerText="A"></s:GridColumn>
+				<s:GridColumn dataField="B" headerText="B"></s:GridColumn>
+				<s:GridColumn dataField="C" headerText="C"></s:GridColumn>
+				<s:GridColumn dataField="D" headerText="D"></s:GridColumn>
+				<s:GridColumn dataField="E" headerText="E"></s:GridColumn>
+				
+			</s:ArrayList>
+		</s:columns>
+		
+		<s:ArrayList>
+			<!--	<fx:Object A="A1" B="B1" C="C1" D="D1" E="E1"></fx:Object>-->
+		</s:ArrayList>
+	</s:DataGrid>
+	
+	
+</s:Group>
