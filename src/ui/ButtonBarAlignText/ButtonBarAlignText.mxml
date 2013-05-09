@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 width="84" height="31">
+	<fx:Declarations>
+		
+		<!-- Разместить невизуальные элементы (например, службы или объекты значений) -->
+	</fx:Declarations>
+	
+	
+	<fx:Style>
+	
+		
+	</fx:Style>
+	
+			<s:ButtonBar id="btnBar"
+						 requireSelection="true"
+					   	 width="80"
+						 skinClass="skins.CustomButtonBarSkin"
+						 >
+				<s:dataProvider>
+					<s:ArrayList>
+						<fx:Object label="left"
+								   icon="@Embed('ui/pict_aligntext/icon_align_left.png')" />
+						<fx:Object label="center"
+								   icon="@Embed('ui/pict_aligntext/icon_align_center.png')" />
+						<fx:Object label="right"
+								   icon="@Embed('ui/pict_aligntext/icon_align_right.png')" />
+						
+					</s:ArrayList>
+				</s:dataProvider>
+			</s:ButtonBar>
+
+	
+	
+</s:Group>
