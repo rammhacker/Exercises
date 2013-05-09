@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	<fx:Declarations>
+	<!--Разместить невизуальные элементы (например, службы или объекты значений) -->
+	</fx:Declarations>
+	
+	
+	<s:SkinnableContainer x="0" y="0" width="290" height="27" backgroundColor="#7FA3D3"
+						  color="#DD1414" styleName="cont_zoom"  >
+		<mx:Button x="14" y="5" width="56" height="22" label="{Math.round(slider_zoom.value)}%"
+				   color="#0548A2"
+				   fontSize="11"
+				   downSkin="@Embed('ui/pict_zoom/percent3.png')" 
+				   fontWeight="bold" 
+				   overSkin="@Embed('ui/pict_zoom/percent2.png')"
+				   upSkin="@Embed('ui/pict_zoom/percent1.png')"/>
+		
+		<mx:Button x="75" y="8" width="17" height="17" label="" click="{slider_zoom.value-=10}"
+				   fontSize="10"
+				   downSkin="@Embed('ui/pict_zoom/zoomdown3.png')" 
+				   overSkin="@Embed('ui/pict_zoom/zoomdown2.png')"
+				   upSkin="@Embed('ui/pict_zoom/zoomdown1.png')"/>
+		
+		<s:HSlider id="slider_zoom" x="109" y="10" width="151" height="10" liveDragging="true"
+				   maximum="400" minimum="10" snapInterval="1" value="100" />
+		
+		
+		<mx:Button x="267" y="8" width="17" height="17" label=""
+				   click="{slider_zoom.value+=10}" 
+				   fontSize="9"
+				   downSkin="@Embed('ui/pict_zoom/zoomup3.png')"
+				   overSkin="@Embed('ui/pict_zoom/zoomup2.png')"
+				   upSkin="@Embed('ui/pict_zoom/zoomup1.png')"/>
+		
+	</s:SkinnableContainer>
+	
+	
+	
+</s:Group>
