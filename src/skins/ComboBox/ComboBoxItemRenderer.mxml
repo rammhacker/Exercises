@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				width="100%" height="30" autoDrawBackground="false"
+				rollOut="{currentState = 'normal'}" rollOver="{currentState = 'hovered'}"
+				width.hovered="100%" height.hovered="45"
+				height.normal="45"   >
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+	</s:states>
+
+
+	
+	<!--
+	<s:Graphic  id="gr1" width="200"  height="40"
+			  
+			   horizontalCenter="0" verticalCenter="0" >
+		<s:BorderContainer  width="30" height="60"  borderStyle="solid" borderVisible="true" borderColor="0x00ff00"   borderWeight="1">
+			
+			
+		<s:BitmapImage  left="1" right="1" top="1" bottom="1" width="15" height="20" source="@Embed('ui/pict_styledata/all.gif')" fillMode="clip">
+				
+			</s:BitmapImage>
+			<s:Label text="{data.@name}" fontSize="11" verticalCenter="0"
+					 left="21" right="20"
+					 color="0x000000" color.hovered="0xffffff"/>
+		</s:BorderContainer>
+		
+	</s:Graphic>
+	
+	-->
+	
+	<!--
+	<s:BorderContainer  width="200" >
+		
+		<s:BitmapImage   id="img1"   left="1" right="1" top="1" bottom="1" width="15" height="20"
+						 
+						
+						 source.hovered="@Embed('ui/pict_aligntext/over.gif')"
+						
+						 
+						
+						 fillMode.hovered="repeat"
+						
+						 />
+		
+	</s:BorderContainer>-->
+	
+
+
+
+	<!--<s:BorderContainer   width="230" borderVisible="false">-->
+		<s:Rect width="100%" includeIn="hovered" left="0" right="0" top="0" bottom="0"  radiusX="2">
+			<s:stroke>
+				<s:SolidColorStroke color="0x868686">
+					
+				</s:SolidColorStroke>
+			</s:stroke>
+			
+			<s:fill>
+				<s:BitmapFill  
+								 
+								 
+								 source.hovered="@Embed('ui/pict_aligntext/over.gif')"
+								 
+								 
+								 
+								 fillMode.hovered="scale"
+								 
+								 />
+			</s:fill>
+		</s:Rect>
+	
+	
+	<s:Rect  left="0" right="0" top="0" bottom="0">
+		<s:fill>
+		<s:BitmapFill fillMode="clip" source="{data.icon}"/>
+		</s:fill>
+		</s:Rect>
+	
+	
+
+	
+	<s:Label alpha="1" left="55" right="21" height="25" color="0x00156e" text="{data.text}"
+			 verticalCenter="0" fontFamily="Calibri"  fontWeight="bold" fontSize="13"/>	
+		
+			
+			<!--</s:BorderContainer>-->
+
+	
+		
+
+</s:ItemRenderer>
+
+
+

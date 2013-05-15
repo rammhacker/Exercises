@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<s:SparkSkin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" 
+        xmlns:fb="http://ns.adobe.com/flashbuilder/2009"
+		height="40"
+		xmlns:comboBox="ui.comboBox.*" xmlns:ComboBox="skins.ComboBox.*" > 
+    
+    <!-- host component -->
+    <fx:Metadata>
+        <![CDATA[ 
+        /** 
+        * @copy spark.skins.spark.ApplicationSkin#hostComponent
+        */
+        [HostComponent("spark.components.ComboBox")]
+        ]]>
+    </fx:Metadata> 
+	
+
+    
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="open" />
+        <s:State name="disabled" />
+    </s:states>
+    
+    <s:PopUpAnchor id="popUp"  displayPopUp.normal="false" displayPopUp.open="true" includeIn="open"
+                   left="0" right="0" top="0" bottom="0" itemDestructionPolicy="auto"
+                   popUpPosition="below" popUpWidthMatchesAnchorWidth="false"
+				    height="220" width="320" alpha="1">
+	
+        
+        <s:Group id="dropDown" height="480">
+           
+            <!-- fill -->
+            <s:Rect id="background" width="220" height="100%" left="1" right="1" top="1" bottom="1" radiusX="5" radiusY="5">
+				<!--<s:filters>
+					<s:DropShadowFilter blurX="60" blurY="80" alpha=".29" distance="30" angle="90" color="0x000000"/>
+				</s:filters>-->
+                <s:fill>
+                    <s:SolidColor id="bgFill" color="0xfafafa" alpha="1"/>
+					
+                </s:fill>
+				<s:stroke>
+					<s:SolidColorStroke color="0x868686" weight="1"  >
+						
+					</s:SolidColorStroke>
+				</s:stroke>
+            </s:Rect>
+			
+				
+						
+		
+			<s:DataGroup   height="455">
+				
+			<s:ArrayCollection>
+				
+			
+			<s:Scroller id="scr"  height="99.5%" left="1" right="4"   top="2"  skinClass="skins.ComboBox.ComboBoxScrollerSkin"  >
+				
+		
+				<s:DataGroup id="dataGroup" top="10" bottom="-46" width="100%"  height="95%" 
+							  itemRenderer="skins.ComboBox.ComboBoxItemRenderer" >
+					
+						<s:layout  >
+                        <s:VerticalLayout     gap="0" horizontalAlign="contentJustify" requestedMinRowCount="1" requestedMaxRowCount="15"/>
+                    </s:layout>
+				
+					
+                </s:DataGroup> 
+				
+	</s:Scroller>
+				
+				
+				
+				<s:Button  skinClass="skins.ComboBox.ComboBoxOtherButtonSkin" 
+						   label="       Другие числовые форматы..."
+						   bottom="-21" right="1" left="2" height="21"  
+						   width="99%" color="0x00156e">
+					
+				</s:Button>
+				
+				
+			</s:ArrayCollection>
+	
+				
+			</s:DataGroup>
+			</s:Group>
+		
+		
+			
+       
+    </s:PopUpAnchor>
+	
+	
+    <s:Button id="openButton" width="15" right="0" top="0" bottom="0" focusEnabled="false"
+              skinClass="skins.ComboBox.ComboBoxButtonSkin" tabEnabled="false" />  
+    <ComboBox:ComboBoxTextInput id="textInput" enabled.disabled="false"
+                 left="0" right="14" top="0" bottom="0"    contentBackgroundColor="red"/> 
+    
+</s:SparkSkin>
+

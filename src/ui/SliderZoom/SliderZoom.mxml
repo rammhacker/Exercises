@@ -7,34 +7,47 @@
 	</fx:Declarations>
 	
 	
-	<s:SkinnableContainer x="0" y="0" width="290" height="27" backgroundColor="#7FA3D3"
-						  color="#DD1414" styleName="cont_zoom"  >
-		<mx:Button x="14" y="5" width="56" height="22" label="{Math.round(slider_zoom.value)}%"
+	<s:SparkSkin x="0" y="0" width="200" height="21" 
+						  color="#DD1414"  styleName="cont_zoom"   >
+		<s:Rect width="100%" height="100%">
+			<s:fill>
+				<s:BitmapFill source="@Embed('ui/pict_zoom/zoom_bgr.gif')"
+							   fillMode="scale">
+					
+				</s:BitmapFill>
+			</s:fill>
+			
+		</s:Rect>
+		
+		<s:Button x="1" y="2" width="57" height="18" label="{Math.round(slider_zoom.value)}%"
 				   color="#0548A2"
-				   fontSize="11"
-				   downSkin="@Embed('ui/pict_zoom/percent3.png')" 
+				   
+				  
 				   fontWeight="bold" 
-				   overSkin="@Embed('ui/pict_zoom/percent2.png')"
-				   upSkin="@Embed('ui/pict_zoom/percent1.png')"/>
+				   skinClass="skins.Buttons.ZoomPercentButtonSkin"
+				  />
 		
-		<mx:Button x="75" y="8" width="17" height="17" label="" click="{slider_zoom.value-=10}"
+		<s:Button x="59" y="2" width="17" height="17" 
+				  label="" 
+				  click="{slider_zoom.value-=10}"
 				   fontSize="10"
-				   downSkin="@Embed('ui/pict_zoom/zoomdown3.png')" 
-				   overSkin="@Embed('ui/pict_zoom/zoomdown2.png')"
-				   upSkin="@Embed('ui/pict_zoom/zoomdown1.png')"/>
+				   icon="@Embed('ui/pict_zoom/zoom_minus.gif')"
+				    skinClass="skins.Buttons.ZoomMinusPlusButtonSkin"
+				  />
 		
-		<s:HSlider id="slider_zoom" x="109" y="10" width="151" height="10" liveDragging="true"
-				   maximum="400" minimum="10" snapInterval="1" value="100" />
+		<s:HSlider id="slider_zoom" x="77" y="5" width="100" height="10" liveDragging="true" skinClass="skins.Slider.ZoomSliderSkin"
+				   maximum="400" minimum="10" snapInterval="1" value="100" showDataTip="false"/>
 		
 		
-		<mx:Button x="267" y="8" width="17" height="17" label=""
+		<s:Button x="178" y="2" width="17" height="17" 
+				  label=""
 				   click="{slider_zoom.value+=10}" 
 				   fontSize="9"
-				   downSkin="@Embed('ui/pict_zoom/zoomup3.png')"
-				   overSkin="@Embed('ui/pict_zoom/zoomup2.png')"
-				   upSkin="@Embed('ui/pict_zoom/zoomup1.png')"/>
+				   icon="@Embed('ui/pict_zoom/zoom_plus.gif')"
+				   skinClass="skins.Buttons.ZoomMinusPlusButtonSkin"
+			/>
 		
-	</s:SkinnableContainer>
+	</s:SparkSkin>
 	
 	
 	
